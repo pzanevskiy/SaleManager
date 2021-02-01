@@ -8,6 +8,6 @@ namespace SaleManager.BL.FileService.Interfaces
     public interface IParser
     {
         IEnumerable<OrderDTO> Parse(string filename);
-        IEnumerable<OrderDTO> HandleParse(string filename);
+        IEnumerable<OrderDTO> ManualParse(string filename);
     }
 }

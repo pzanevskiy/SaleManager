@@ -38,7 +38,7 @@ namespace SaleManager.BL.TaskManager
         {          
             Task task = new Task(() => 
             {
-                var orders = parser.HandleParse(e.FullPath);
+                var orders = parser.ManualParse(e.FullPath);
                 foreach(var order in orders)
                 {
                     IUnitOfWork uow = new EFUnitOfWork();

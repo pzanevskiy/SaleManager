@@ -27,7 +27,7 @@ namespace SaleManager.BL.FileService
             return orders;
         }
 
-        public IEnumerable<OrderDTO> HandleParse(string filename)
+        public IEnumerable<OrderDTO> ManualParse(string filename)
         {
             ICollection<OrderDTO> orders = new List<OrderDTO>();
             using (var stream = new StreamReader(filename))
