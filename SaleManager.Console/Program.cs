@@ -23,18 +23,8 @@ namespace SaleManager.ConsoleService
             manager.Run();
             Console.ReadKey();
             manager.Stop();
-            //IParser parser = new CSVParser();
-            //var x=parser.Parse("C:\\Users\\Павел\\source\\repos\\SaleManager\\Files\\2.csv");
-            //using(var uow=new EFUnitOfWork())
-            //{
-            //    OrderService orderService = new OrderService(uow);
-            //    foreach(var item in x)
-            //    {
-            //        orderService.AddOrder(item);
-            //    }
-            //    var cust = uow.Customers.Get();
-                
-            //}
+            Console.WriteLine("Press key...");
+            Console.ReadKey();
         }
     }
 }

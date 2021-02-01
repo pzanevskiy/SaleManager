@@ -20,8 +20,7 @@ namespace SaleManager.BL.TaskManager
     {
         private IFileWatcherProvider FileWatcher { get; }
         private IParser Parser { get; }
-        private CustomTaskScheduler _taskScheduler;
-
+        private CustomTaskScheduler _taskScheduler;        
         private CancellationTokenSource cancelToken;
         private Object lockObj = new Object();
         private const int _maxTaskCount = 3;
@@ -34,9 +33,9 @@ namespace SaleManager.BL.TaskManager
             _taskScheduler = new CustomTaskScheduler(_maxTaskCount);
             cancelToken = new CancellationTokenSource();
         }
-
+       
         private void StartTask(object sender, FileSystemEventArgs e)
-        {
+        {            
             Task task = new Task(() => 
             {
                 var orders = Parser.Parse(e.FullPath);
@@ -49,7 +48,7 @@ namespace SaleManager.BL.TaskManager
                         lock (lockObj)
                         {
                             service.AddOrder(order);
-                            Console.WriteLine($"{order.Product} added from file {e.FullPath}\t Task - {Task.CurrentId}");
+                            //Console.WriteLine($"{order.Product} added from file {e.FullPath}\t Task - {Task.CurrentId}");
                         }
                     }
                     finally

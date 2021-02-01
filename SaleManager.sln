@@ -11,6 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleManager.DAL", "SaleMana
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SaleManager.BL", "SaleManager.BL\SaleManager.BL.csproj", "{F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaleManager.WindowsService", "SaleManager.WindowsService\SaleManager.WindowsService.csproj", "{71A8CEE2-61C6-450C-B674-5D1F5596002F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8} = {F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +38,10 @@ Global
 		{F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F43FDB88-2A88-4AC8-9A72-BE8E92C3BCB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A8CEE2-61C6-450C-B674-5D1F5596002F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A8CEE2-61C6-450C-B674-5D1F5596002F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A8CEE2-61C6-450C-B674-5D1F5596002F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A8CEE2-61C6-450C-B674-5D1F5596002F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

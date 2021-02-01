@@ -14,7 +14,7 @@ namespace SaleManager.DAL
         private IGenericRepository<Customer> customerRepository;
         private IGenericRepository<Order> orderRepository;
         private IGenericRepository<Product> productRepository;
-
+        
         public EFUnitOfWork()
         {
             context = new SaleContext();
