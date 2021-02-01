@@ -11,16 +11,16 @@ namespace SaleManager.BL.FileProvider
     {
         public FileSystemWatcher Watcher { get; private set; }
         public event EventHandler<FileSystemEventArgs> Create;
-
+        
         public FileWatcherProvider()
-        {
+        {           
             Watcher = new FileSystemWatcher(
                 ConfigurationManager.AppSettings["sourceFolder"], 
                 ConfigurationManager.AppSettings["filePattern"]
                 );
             Watcher.Created += OnCreated;
         }
-
+        
         protected void OnCreated(object sender, FileSystemEventArgs e)
         {
             Create?.Invoke(this, e);

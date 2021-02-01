@@ -1,0 +1,4 @@
+installutil C:\Users\Павел\source\repos\SaleManager\SaleManager.WindowsService\bin\Debug\SaleManager.WindowsService.exe
+installutil /u C:\Users\Павел\source\repos\SaleManager\SaleManager.WindowsService\bin\Debug\SaleManager.WindowsService.exe
+net stop SaleManager
+net start SaleManager

@@ -19,14 +19,14 @@ namespace SaleManager.WindowsService
     public partial class Service1 : ServiceBase
     {
         private ITaskManager manager;
-       
+        CustomTaskScheduler scheduler;
         public Service1()
         {
             InitializeComponent();
         }
 
         protected override void OnStart(string[] args)
-        {           
+        {
             manager = new TaskManager();
             manager.Run();
         }

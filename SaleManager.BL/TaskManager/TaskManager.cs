@@ -18,27 +18,27 @@ namespace SaleManager.BL.TaskManager
 {
     public class TaskManager : ITaskManager
     {
-        private IFileWatcherProvider FileWatcher { get; }
-        private IParser Parser { get; }
-        private CustomTaskScheduler _taskScheduler;        
+        private IFileWatcherProvider fileWatcher;
+        private IParser parser;
+        private CustomTaskScheduler taskScheduler;        
         private CancellationTokenSource cancelToken;
         private Object lockObj = new Object();
         private const int _maxTaskCount = 3;
 
         public TaskManager()
         {
-            FileWatcher = new FileWatcherProvider();
-            FileWatcher.Create += StartTask;
-            Parser = new CSVParser();
-            _taskScheduler = new CustomTaskScheduler(_maxTaskCount);
+            fileWatcher = new FileWatcherProvider();
+            fileWatcher.Create += StartTask;
+            parser = new CSVParser();
+            taskScheduler = new CustomTaskScheduler(3);
             cancelToken = new CancellationTokenSource();
         }
-       
+        
         private void StartTask(object sender, FileSystemEventArgs e)
-        {            
+        {          
             Task task = new Task(() => 
             {
-                var orders = Parser.Parse(e.FullPath);
+                var orders = parser.HandleParse(e.FullPath);
                 foreach(var order in orders)
                 {
                     IUnitOfWork uow = new EFUnitOfWork();
@@ -55,21 +55,23 @@ namespace SaleManager.BL.TaskManager
                     {
                         service.Dispose();
                         uow.Dispose();
+                        File.Delete(e.FullPath);
                     }
                 }
-            },cancelToken.Token);
-            task.Start(_taskScheduler);
+            },
+            cancelToken.Token);
+            task.Start(taskScheduler);
         }
 
         public void Run()
         {
-            FileWatcher.Run();
+            fileWatcher.Run();
         }
 
         public void Stop()
         {
             cancelToken.Cancel();
-            FileWatcher.Stop();
+            fileWatcher.Stop();
         }
 
         private bool disposed = false;
@@ -80,7 +82,7 @@ namespace SaleManager.BL.TaskManager
             {
                 if (disposing)
                 {
-                    FileWatcher.Dispose();
+                    fileWatcher.Dispose();
                     cancelToken.Dispose();
                 }
                 this.disposed = true;

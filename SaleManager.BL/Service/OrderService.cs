@@ -11,12 +11,12 @@ namespace SaleManager.BL.Service
     public class OrderService : IOrderService
     {
         private IUnitOfWork Database { get; set; }
-
+       
         public OrderService(IUnitOfWork uow)
-        {
+        {           
             Database = uow;
         }
-
+        
         public void AddOrder(OrderDTO orderDTO)
         {
             var cutomer = Database.Customers.Get(x => x.Nickname.Equals(orderDTO.Customer));
