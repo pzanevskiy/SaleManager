@@ -13,6 +13,7 @@ using System.IO;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Transactions;
 
 namespace SaleManager.BL.TaskManager
 {
@@ -36,31 +37,51 @@ namespace SaleManager.BL.TaskManager
         
         private void StartTask(object sender, FileSystemEventArgs e)
         {          
-            Task task = new Task(() => 
+            Task task = new Task(() =>
             {
-                var orders = parser.ManualParse(e.FullPath);
-                foreach(var order in orders)
-                {
-                    IUnitOfWork uow = new EFUnitOfWork();
-                    IOrderService service = new OrderService(uow);
-                    try
+                //using (var transaction = new TransactionScope(TransactionScopeOption.Required))
+                //{
+                    var orders = parser.ManualParse(e.FullPath);
+                    foreach (var order in orders)
                     {
-                        lock (lockObj)
+                        IUnitOfWork uow = new EFUnitOfWork();
+                        IOrderService service = new OrderService(uow);
+                        try
                         {
-                            service.AddOrder(order);
-                            //Console.WriteLine($"{order.Product} added from file {e.FullPath}\t Task - {Task.CurrentId}");
+                            lock (lockObj)
+                            {
+                                if (!cancelToken.IsCancellationRequested)
+                                {
+                                    service.AddOrder(order);
+                                    Console.WriteLine($"{order.Product} added from file {e.FullPath}\t Task - {Task.CurrentId}");
+                                }
+                                else
+                                {
+                                    Console.WriteLine("cancellation token true");
+                                    break;
+                                }
+                            }
+                        }
+                        finally
+                        {
+                            service.Dispose();
+                            uow.Dispose();
                         }
                     }
-                    finally
+                    if (!cancelToken.IsCancellationRequested)
                     {
-                        service.Dispose();
-                        uow.Dispose();
+                        //transaction.Complete();
+                        Console.WriteLine($"{e.Name} deleted");
                         File.Delete(e.FullPath);
                     }
-                }
+                    else
+                    {
+                        //Transaction.Current.Rollback();
+                    }
+                //}
             },
             cancelToken.Token);
-            task.Start(taskScheduler);
+            task.Start(taskScheduler);            
         }
 
         public void Run()

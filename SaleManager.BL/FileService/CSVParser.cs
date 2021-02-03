@@ -14,15 +14,22 @@ namespace SaleManager.BL.FileService
         public IEnumerable<OrderDTO> Parse(string filename)
         {
             ICollection<OrderDTO> orders = new List<OrderDTO>();
-            using(var stream=new StreamReader(filename))
+            try
             {
-                using (var csv = new CsvReader(stream, null))
-                {                
-                    foreach (var item in csv.GetRecords<OrderDTO>())
+                using (var stream = new StreamReader(filename))
+                {
+                    using (var csv = new CsvReader(stream, null))
                     {
-                        orders.Add(item);
+                        foreach (var item in csv.GetRecords<OrderDTO>())
+                        {
+                            orders.Add(item);
+                        }
                     }
                 }
+            }
+            catch (IOException e)
+            {
+                throw new Exception(e.Message);
             }
             return orders;
         }
@@ -30,25 +37,33 @@ namespace SaleManager.BL.FileService
         public IEnumerable<OrderDTO> ManualParse(string filename)
         {
             ICollection<OrderDTO> orders = new List<OrderDTO>();
-            using (var stream = new StreamReader(filename))
+            try
             {
-                stream.ReadLine();
-                while (!stream.EndOfStream)
+                using (var stream = new StreamReader(filename))
                 {
-                    string[] splitted = stream.ReadLine().Split(';');
-
-                    OrderDTO order = new OrderDTO()
+                    stream.ReadLine();
+                    while (!stream.EndOfStream)
                     {
-                        Date = DateTime.ParseExact(splitted[0], "dd.MM.yyyy", null),
-                        Customer = splitted[1],
-                        Product = splitted[2],
-                        Price = double.Parse(splitted[3].Trim(new char[] { '\"' }), null)
-                    };
-                    
-                    orders.Add(order);
+                        string[] splitted = stream.ReadLine().Split(';');
+
+                        OrderDTO order = new OrderDTO()
+                        {
+                            Date = DateTime.ParseExact(splitted[0], "dd.MM.yyyy", null),
+                            Customer = splitted[1],
+                            Product = splitted[2],
+                            Price = double.Parse(splitted[3].Trim(new char[] { '\"' }), null)
+                        };
+
+                        orders.Add(order);
+                    }
+                    stream.Close();
                 }
-                stream.Close();
             }
+            catch(IOException e)
+            {
+                throw new Exception(e.Message);
+            }
+            
             return orders;
         }
     }
