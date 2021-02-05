@@ -10,7 +10,14 @@ using System.Text;
 namespace SaleManager.BL.FileService
 {
     public class CSVParser : Interfaces.IParser
-    {       
+    {
+        private Logger _logger;
+
+        public CSVParser()
+        {
+            _logger = new Logger();
+        }
+
         public IEnumerable<OrderDTO> Parse(string filename)
         {
             ICollection<OrderDTO> orders = new List<OrderDTO>();
@@ -29,6 +36,7 @@ namespace SaleManager.BL.FileService
             }
             catch (IOException e)
             {
+                _logger.Info(e.Message);
                 throw new Exception(e.Message);
             }
             return orders;
@@ -61,6 +69,7 @@ namespace SaleManager.BL.FileService
             }
             catch(IOException e)
             {
+                _logger.Info(e.Message);
                 throw new Exception(e.Message);
             }
             

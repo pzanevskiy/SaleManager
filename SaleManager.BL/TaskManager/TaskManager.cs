@@ -9,6 +9,7 @@ using SaleManager.DAL;
 using SaleManager.DAL.UnitOfWork.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Text;
 using System.Threading;
@@ -19,80 +20,81 @@ namespace SaleManager.BL.TaskManager
 {
     public class TaskManager : ITaskManager
     {
-        private IFileWatcherProvider fileWatcher;
-        private IParser parser;
-        private CustomTaskScheduler taskScheduler;        
-        private CancellationTokenSource cancelToken;
-        private Object lockObj = new Object();
+        private IFileWatcherProvider _fileWatcher;
+        IDirectoryHandler _directoryHandler;
+        private IParser _parser;
+        private CustomTaskScheduler _taskScheduler;
+        private CancellationTokenSource _cancelToken;
+        private Logger _logger;
+        private Object _lockObj = new Object();
         private const int _maxTaskCount = 3;
 
         public TaskManager()
         {
-            fileWatcher = new FileWatcherProvider();
-            fileWatcher.Create += StartTask;
-            parser = new CSVParser();
-            taskScheduler = new CustomTaskScheduler(3);
-            cancelToken = new CancellationTokenSource();
+            _fileWatcher = new FileWatcherProvider();
+            _fileWatcher.Create += StartTask;
+            _directoryHandler = new DirectoryHandler();
+            _parser = new CSVParser();
+            _taskScheduler = new CustomTaskScheduler(_maxTaskCount);
+            _cancelToken = new CancellationTokenSource();
+            _logger = new Logger();
         }
-        
+
         private void StartTask(object sender, FileSystemEventArgs e)
-        {          
+        {
             Task task = new Task(() =>
             {
-                //using (var transaction = new TransactionScope(TransactionScopeOption.Required))
-                //{
-                    var orders = parser.ManualParse(e.FullPath);
-                    foreach (var order in orders)
+                var orders = _parser.ManualParse(e.FullPath);
+                foreach (var order in orders)
+                {
+                    Thread.Sleep(50);
+                    IUnitOfWork uow = new EFUnitOfWork();
+                    IOrderService service = new OrderService(uow);
+                    try
                     {
-                        IUnitOfWork uow = new EFUnitOfWork();
-                        IOrderService service = new OrderService(uow);
-                        try
+                        lock (_lockObj)
                         {
-                            lock (lockObj)
+                            if (!_cancelToken.IsCancellationRequested)
                             {
-                                if (!cancelToken.IsCancellationRequested)
-                                {
-                                    service.AddOrder(order);
-                                    Console.WriteLine($"{order.Product} added from file {e.FullPath}\t Task - {Task.CurrentId}");
-                                }
-                                else
-                                {
-                                    Console.WriteLine("cancellation token true");
-                                    break;
-                                }
+                                service.AddOrder(order);
+                                _logger.Info($"{order.Product} added from file {e.Name}\t Task - {Task.CurrentId}");
+                            }
+                            else
+                            {
+                                _logger.Info("Task stopped");
+                                break;
                             }
                         }
-                        finally
-                        {
-                            service.Dispose();
-                            uow.Dispose();
-                        }
                     }
-                    if (!cancelToken.IsCancellationRequested)
+                    catch(Exception)
                     {
-                        //transaction.Complete();
-                        Console.WriteLine($"{e.Name} deleted");
-                        File.Delete(e.FullPath);
+                        _logger.Info("Can't add record to database");
+                        throw new InvalidOperationException("Can't add record to database");
                     }
-                    else
+                    finally
                     {
-                        //Transaction.Current.Rollback();
+                        service.Dispose();
+                        uow.Dispose();
                     }
-                //}
+                }
+                if (!_cancelToken.IsCancellationRequested)
+                {
+                    _directoryHandler.Move(e.FullPath, e.Name);
+                }
             },
-            cancelToken.Token);
-            task.Start(taskScheduler);            
+            _cancelToken.Token);
+            task.Start(_taskScheduler);
         }
 
         public void Run()
         {
-            fileWatcher.Run();
+            _fileWatcher.Run();
         }
 
         public void Stop()
         {
-            cancelToken.Cancel();
-            fileWatcher.Stop();
+            _cancelToken.Cancel();
+            _fileWatcher.Stop();
         }
 
         private bool disposed = false;
@@ -103,8 +105,8 @@ namespace SaleManager.BL.TaskManager
             {
                 if (disposing)
                 {
-                    fileWatcher.Dispose();
-                    cancelToken.Dispose();
+                    _fileWatcher.Dispose();
+                    _cancelToken.Dispose();
                 }
                 this.disposed = true;
             }

@@ -1,0 +1,38 @@
+2/5/2021 11:32:50 PM - 1 — копия (4).csv do not matches pattern
+2/5/2021 11:33:09 PM - Ivanov_12345678.csv matches pattern
+2/5/2021 11:33:09 PM - Petrov_87654321.csv matches pattern
+2/5/2021 11:33:09 PM - Sidorov_96325874.csv matches pattern
+2/5/2021 11:33:12 PM - juice added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - juice added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - juice added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - water added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - water added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - water added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - soda added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - soda added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - soda added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - coffee added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - coffee added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - coffee added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - tea added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - tea added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - tea added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - beer added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - beer added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - beer added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - pizza added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - pizza added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - pizza added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - cake added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - cake added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - cake added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - sweet added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - sweet added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - sweet added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - choco added from file Ivanov_12345678.csv	 Task - 1
+2/5/2021 11:33:12 PM - Ivanov_12345678.csv moved to destination directory
+2/5/2021 11:33:12 PM - choco added from file Petrov_87654321.csv	 Task - 2
+2/5/2021 11:33:12 PM - Petrov_87654321.csv moved to destination directory
+2/5/2021 11:33:12 PM - choco added from file Sidorov_96325874.csv	 Task - 3
+2/5/2021 11:33:12 PM - Sidorov_96325874.csv moved to destination directory
+05.02.2021 23:34:19 - 1 — копия (4).csv do not matches pattern
