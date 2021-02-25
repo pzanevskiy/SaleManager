@@ -14,7 +14,8 @@ namespace SaleManager.DAL
         private IGenericRepository<Customer> customerRepository;
         private IGenericRepository<Order> orderRepository;
         private IGenericRepository<Product> productRepository;
-        
+        private IGenericRepository<Manager> managerRepository;
+
         public EFUnitOfWork()
         {
             context = new SaleContext();
@@ -56,6 +57,17 @@ namespace SaleManager.DAL
             }
         }
 
+        public IGenericRepository<Manager> Managers
+        {
+            get
+            {
+                if (managerRepository == null)
+                {
+                    managerRepository = new GenericRepository<Manager>(context);
+                }
+                return managerRepository;
+            }
+        }
         public void Save()
         {
             context.SaveChanges();

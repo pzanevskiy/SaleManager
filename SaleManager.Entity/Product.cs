@@ -22,6 +22,7 @@ namespace SaleManager.Entity
     
         public int Id { get; set; }
         public string Name { get; set; }
+        public double Price { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Order> Orders { get; set; }

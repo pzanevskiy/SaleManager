@@ -1,38 +1,277 @@
-2/5/2021 11:32:50 PM - 1 — копия (4).csv do not matches pattern
-2/5/2021 11:33:09 PM - Ivanov_12345678.csv matches pattern
-2/5/2021 11:33:09 PM - Petrov_87654321.csv matches pattern
-2/5/2021 11:33:09 PM - Sidorov_96325874.csv matches pattern
-2/5/2021 11:33:12 PM - juice added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - juice added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - juice added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - water added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - water added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - water added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - soda added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - soda added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - soda added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - coffee added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - coffee added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - coffee added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - tea added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - tea added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - tea added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - beer added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - beer added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - beer added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - pizza added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - pizza added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - pizza added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - cake added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - cake added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - cake added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - sweet added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - sweet added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - sweet added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - choco added from file Ivanov_12345678.csv	 Task - 1
-2/5/2021 11:33:12 PM - Ivanov_12345678.csv moved to destination directory
-2/5/2021 11:33:12 PM - choco added from file Petrov_87654321.csv	 Task - 2
-2/5/2021 11:33:12 PM - Petrov_87654321.csv moved to destination directory
-2/5/2021 11:33:12 PM - choco added from file Sidorov_96325874.csv	 Task - 3
-2/5/2021 11:33:12 PM - Sidorov_96325874.csv moved to destination directory
-05.02.2021 23:34:19 - 1 — копия (4).csv do not matches pattern
+07.02.2021 18:43:02 - Ivanov_11111113.csv matches pattern
+07.02.2021 18:43:02 - Petrov_87654321.csv matches pattern
+07.02.2021 18:43:02 - Sidorov_96325874.csv matches pattern
+07.02.2021 18:43:04 - juice added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:04 - juice added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:04 - juice added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - water added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - water added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - water added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - soda added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - soda added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - soda added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - coffee added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - coffee added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - coffee added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - tea added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - tea added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - tea added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - beer added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - beer added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - beer added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - pizza added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - pizza added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - pizza added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - cake added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - cake added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - cake added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - sweet added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - sweet added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - sweet added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - choco added from file Petrov_87654321.csv	 Task - 2
+07.02.2021 18:43:05 - Petrov_87654321.csv moved to destination directory
+07.02.2021 18:43:05 - choco added from file Sidorov_96325874.csv	 Task - 3
+07.02.2021 18:43:05 - Sidorov_96325874.csv moved to destination directory
+07.02.2021 18:43:05 - choco added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:43:05 - Ivanov_11111113.csv moved to destination directory
+07.02.2021 18:45:52 - Ivanov_11111113.csv matches pattern
+07.02.2021 18:45:55 - juice added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - water added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - soda added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - coffee added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - tea added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - beer added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - pizza added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - cake added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - sweet added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - choco added from file Ivanov_11111113.csv	 Task - 1
+07.02.2021 18:45:55 - Ivanov_11111113.csv moved to destination directory
+07.02.2021 18:46:32 - Ivanov_11111113.csv matches pattern
+07.02.2021 18:46:32 - Ivanov_11111112.csv matches pattern
+07.02.2021 18:46:32 - juice added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - juice added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - water added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - water added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - soda added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - soda added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - coffee added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - coffee added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - tea added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - tea added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - beer added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - beer added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - pizza added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - pizza added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - cake added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - cake added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - sweet added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - sweet added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - choco added from file Ivanov_11111113.csv	 Task - 2
+07.02.2021 18:46:32 - Ivanov_11111113.csv moved to destination directory
+07.02.2021 18:46:32 - choco added from file Ivanov_11111112.csv	 Task - 3
+07.02.2021 18:46:32 - Ivanov_11111112.csv moved to destination directory
+2/12/2021 1:23:51 PM - Ivanov_11111111.csv matches pattern
+2/12/2021 1:23:51 PM - Petrov_87654321.csv matches pattern
+2/12/2021 1:23:51 PM - Sidorov_96325874.csv matches pattern
+2/12/2021 1:23:54 PM - juice added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - juice added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - juice added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - water added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - water added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - water added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - soda added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - soda added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - soda added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - coffee added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - coffee added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - coffee added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - tea added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - tea added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - tea added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - beer added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - beer added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - beer added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - pizza added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - pizza added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - pizza added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:54 PM - cake added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:54 PM - cake added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:54 PM - cake added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:55 PM - sweet added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:55 PM - sweet added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:55 PM - sweet added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:55 PM - choco added from file Sidorov_96325874.csv	 Task - 1
+2/12/2021 1:23:55 PM - Sidorov_96325874.csv moved to destination directory
+2/12/2021 1:23:55 PM - choco added from file Petrov_87654321.csv	 Task - 2
+2/12/2021 1:23:55 PM - Petrov_87654321.csv moved to destination directory
+2/12/2021 1:23:55 PM - choco added from file Ivanov_11111111.csv	 Task - 3
+2/12/2021 1:23:55 PM - Ivanov_11111111.csv moved to destination directory
+2/15/2021 4:19:15 PM - Ivanov_11111113.csv matches pattern
+2/15/2021 4:19:15 PM - Sidorov_96325874.csv matches pattern
+2/15/2021 4:19:15 PM - Ivanov_11111111.csv matches pattern
+2/15/2021 4:19:15 PM - Ivanov_11111112.csv matches pattern
+2/15/2021 4:19:18 PM - juice added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - juice added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - juice added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - water added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - water added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - water added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - soda added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - soda added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - soda added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - coffee added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - coffee added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - coffee added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - tea added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - tea added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - tea added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - beer added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - beer added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - beer added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - pizza added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - pizza added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - pizza added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - cake added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - cake added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - cake added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - sweet added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - sweet added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - sweet added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - choco added from file Ivanov_11111113.csv	 Task - 1
+2/15/2021 4:19:18 PM - Ivanov_11111113.csv moved to destination directory
+2/15/2021 4:19:18 PM - choco added from file Sidorov_96325874.csv	 Task - 2
+2/15/2021 4:19:18 PM - Sidorov_96325874.csv moved to destination directory
+2/15/2021 4:19:18 PM - choco added from file Ivanov_11111111.csv	 Task - 3
+2/15/2021 4:19:18 PM - Ivanov_11111111.csv moved to destination directory
+2/15/2021 4:19:18 PM - juice added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - water added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - soda added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - coffee added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - tea added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - beer added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - pizza added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:18 PM - cake added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:19 PM - sweet added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:19 PM - choco added from file Ivanov_11111112.csv	 Task - 4
+2/15/2021 4:19:19 PM - Ivanov_11111112.csv moved to destination directory
+2/15/2021 4:51:05 PM - Ivanov_12345678.csv matches pattern
+2/15/2021 4:51:05 PM - Petrov_87654321.csv matches pattern
+2/15/2021 4:51:05 PM - Sidorov_96325874.csv matches pattern
+2/15/2021 4:51:07 PM - juice added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:07 PM - juice added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:07 PM - juice added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:07 PM - water added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:07 PM - water added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:07 PM - water added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:07 PM - soda added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:07 PM - soda added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:07 PM - soda added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - coffee added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - coffee added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - coffee added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - tea added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - tea added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - tea added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - beer added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - beer added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - beer added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - pizza added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - pizza added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - pizza added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - cake added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - cake added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - cake added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - sweet added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - sweet added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - sweet added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - choco added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 4:51:08 PM - Sidorov_96325874.csv moved to destination directory
+2/15/2021 4:51:08 PM - choco added from file Ivanov_12345678.csv	 Task - 3
+2/15/2021 4:51:08 PM - Ivanov_12345678.csv moved to destination directory
+2/15/2021 4:51:08 PM - choco added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 4:51:08 PM - Petrov_87654321.csv moved to destination directory
+15.02.2021 17:03:06 - Petrov_87654321.csv matches pattern
+15.02.2021 17:03:06 - Sidorov_96325874.csv matches pattern
+15.02.2021 17:03:08 - juice added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:08 - juice added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:08 - water added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - water added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - soda added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - soda added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - coffee added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - coffee added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - tea added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - tea added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - beer added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - beer added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - pizza added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - pizza added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - cake added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - cake added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - sweet added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - sweet added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - choco added from file Petrov_87654321.csv	 Task - 1
+15.02.2021 17:03:09 - Petrov_87654321.csv moved to destination directory
+15.02.2021 17:03:09 - choco added from file Sidorov_96325874.csv	 Task - 2
+15.02.2021 17:03:09 - Sidorov_96325874.csv moved to destination directory
+15.02.2021 17:04:03 - Ivanov_11111111.csv matches pattern
+15.02.2021 17:04:03 - Ivanov_11111112.csv matches pattern
+15.02.2021 17:04:03 - Ivanov_11111113.csv matches pattern
+15.02.2021 17:04:06 - juice added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - juice added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - juice added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - water added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - water added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - water added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - soda added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - soda added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - soda added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - coffee added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - coffee added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - coffee added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - tea added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - tea added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - tea added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - beer added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - beer added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - beer added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - pizza added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - pizza added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - pizza added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - cake added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - cake added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - cake added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - sweet added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - sweet added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - sweet added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - choco added from file Ivanov_11111111.csv	 Task - 1
+15.02.2021 17:04:06 - Ivanov_11111111.csv moved to destination directory
+15.02.2021 17:04:06 - choco added from file Ivanov_11111112.csv	 Task - 2
+15.02.2021 17:04:06 - Ivanov_11111112.csv moved to destination directory
+15.02.2021 17:04:06 - choco added from file Ivanov_11111113.csv	 Task - 3
+15.02.2021 17:04:06 - Ivanov_11111113.csv moved to destination directory
+15.02.2021 17:06:32 - Ivanov_11111111.csv matches pattern
+2/15/2021 5:24:52 PM - Petrov_87654321.csv matches pattern
+2/15/2021 5:24:52 PM - Sidorov_96325874.csv matches pattern
+2/15/2021 5:24:55 PM - juice added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - juice added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - water added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - water added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - soda added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - soda added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - coffee added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - coffee added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - tea added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - tea added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - beer added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - beer added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - pizza added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - pizza added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - cake added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - cake added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - sweet added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - sweet added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - choco added from file Sidorov_96325874.csv	 Task - 1
+2/15/2021 5:24:55 PM - Sidorov_96325874.csv moved to destination directory
+2/15/2021 5:24:55 PM - choco added from file Petrov_87654321.csv	 Task - 2
+2/15/2021 5:24:55 PM - Petrov_87654321.csv moved to destination directory

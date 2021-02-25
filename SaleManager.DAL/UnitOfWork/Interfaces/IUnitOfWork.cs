@@ -11,6 +11,8 @@ namespace SaleManager.DAL.UnitOfWork.Interfaces
         IGenericRepository<Customer> Customers { get; }
         IGenericRepository<Product> Products { get; }
         IGenericRepository<Order> Orders { get; }
+        IGenericRepository<Manager> Managers { get; }
+
         void Save();
     }
 }

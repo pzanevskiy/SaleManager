@@ -28,5 +28,6 @@ namespace SaleManager.Entity
         public virtual DbSet<Customer> Customers { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Manager> ManagerSet { get; set; }
     }
 }
